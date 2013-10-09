@@ -1,7 +1,7 @@
-&FForged in a star.
-&6Gilded with creeper blood.
-&7Zombie-proof.
-&5Only cost ten gold ingots.
-&3Skeletons don't scare you.
-&9Wither Skulls are delicious.
-&5Slice and &4dice&5 with/nthis beautiful blade.
+&F用星星点缀.
+&6以爬行者之血而铸.
+&7专砍僵尸.
+&5只需十块金锭.
+&3骷髅怪吓不着你.
+&9凋零骷髅尝起来不错.
+&5舞刀&4弄枪&5得要好兵器来比划.
