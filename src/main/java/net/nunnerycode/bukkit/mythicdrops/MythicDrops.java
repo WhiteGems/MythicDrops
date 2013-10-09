@@ -128,7 +128,7 @@ public final class MythicDrops extends ModulePlugin {
 
 	public void reload() {
 		disable();
-		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " reloaded");
+		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " 重新载入完毕");
 		enable();
 	}
 
@@ -251,8 +251,8 @@ public final class MythicDrops extends ModulePlugin {
 
 		for (Module m : getModules()) {
 			if (m.isEnabled()) {
-				getLogger().log(Level.INFO, "Module loaded: " + m.getName());
-				debug(Level.INFO, "Module loaded: " + m.getName());
+				getLogger().log(Level.INFO, "模块已载入: " + m.getName());
+				debug(Level.INFO, "模块已载入: " + m.getName());
 			}
 		}
 
@@ -275,7 +275,7 @@ public final class MythicDrops extends ModulePlugin {
 					yc.save(new File(getDataFolder(), s));
 				}
 			} catch (IOException e) {
-				getLogger().warning("Could not unpack " + s);
+				getLogger().warning("不能解压 " + s);
 			}
 		}
 	}
@@ -286,7 +286,7 @@ public final class MythicDrops extends ModulePlugin {
 
 		debugPrinter = new DebugPrinter(getDataFolder().getPath(), "debug.log");
 
-		debug(Level.INFO, "Initializing MythicDrops v" + getDescription().getVersion());
+		debug(Level.INFO, "初始化神秘掉落白宝石汉化版 v" + getDescription().getVersion());
 	}
 
 	@Override
@@ -294,7 +294,7 @@ public final class MythicDrops extends ModulePlugin {
 		disable();
 
 		// Prints a debug message that the plugin is disabled
-		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " disabled");
+		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " 已禁用");
 		debug(Level.INFO, "", "", "");
 	}
 
@@ -304,7 +304,7 @@ public final class MythicDrops extends ModulePlugin {
 
 		startMetrics();
 		// Prints a debug message that the plugin is enabled
-		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " enabled");
+		debug(Level.INFO, getDescription().getName() + " v" + getDescription().getVersion() + " 已启用");
 	}
 
 	public void debug(String... messages) {
@@ -314,7 +314,7 @@ public final class MythicDrops extends ModulePlugin {
 	private void startMetrics() {
 		try {
 			Metrics m = new Metrics(this);
-			Metrics.Graph moduleUsedGraph = m.createGraph("Modules Used");
+			Metrics.Graph moduleUsedGraph = m.createGraph("使用的模块");
 			for (final Module mod : getModules()) {
 				moduleUsedGraph.addPlotter(new Metrics.Plotter(mod.getName()) {
 					@Override
