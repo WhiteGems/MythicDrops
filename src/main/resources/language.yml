@@ -28,7 +28,7 @@ command:
 # Various display names that are used for
 #   different itemNameFormat variables
 displayNames:
- '256': 铁铲
+  '256': 铁铲
   '257': 铁镐
   '258': 铁斧
   '261': 弓
