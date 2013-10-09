@@ -43,7 +43,7 @@ public class NamesLoader {
 		try {
 			fileReader = new FileReader(file);
 		} catch (FileNotFoundException e) {
-			plugin.debug(Level.WARNING, "Could not find file " + name);
+			plugin.debug(Level.WARNING, "不能找到文件 " + name);
 			return;
 		}
 		BufferedReader list = new BufferedReader(fileReader);
@@ -56,7 +56,7 @@ public class NamesLoader {
 			}
 			list.close();
 		} catch (IOException exception) {
-			plugin.debug(Level.WARNING, "Could not load file " + name);
+			plugin.debug(Level.WARNING, "不能载入文件 " + name);
 		}
 	}
 
@@ -69,7 +69,7 @@ public class NamesLoader {
 		try {
 			fileReader = new FileReader(f);
 		} catch (FileNotFoundException e) {
-			plugin.debug(Level.WARNING, "Could not find file " + name);
+			plugin.debug(Level.WARNING, "不能找到文件 " + name);
 			return;
 		}
 		BufferedReader list = new BufferedReader(fileReader);
@@ -85,7 +85,7 @@ public class NamesLoader {
 			}
 			list.close();
 		} catch (IOException exception) {
-			plugin.debug(Level.WARNING, "Could not read file " + name);
+			plugin.debug(Level.WARNING, "不能读取文件 " + name);
 		}
 	}
 
@@ -99,7 +99,7 @@ public class NamesLoader {
 		try {
 			fileReader = new FileReader(f);
 		} catch (FileNotFoundException e) {
-			plugin.debug(Level.WARNING, "Could not find file " + name);
+			plugin.debug(Level.WARNING, "不能找到文件 " + name);
 			return;
 		}
 		BufferedReader list = new BufferedReader(fileReader);
@@ -117,7 +117,7 @@ public class NamesLoader {
 			}
 			list.close();
 		} catch (IOException exception) {
-			plugin.debug(Level.WARNING, "Could not read file " + name);
+			plugin.debug(Level.WARNING, "不能读取文件 " + name);
 		}
 	}
 
@@ -138,7 +138,7 @@ public class NamesLoader {
 				}
 			}
 		} catch (NullPointerException e) {
-			plugin.debug(Level.WARNING, "Could not find a Tier called " + f.getName().replace(".txt", ""));
+			plugin.debug(Level.WARNING, "不能找到等级文件, 名为 " + f.getName().replace(".txt", ""));
 			return;
 		}
 		List<String> l = new ArrayList<String>();
@@ -146,7 +146,7 @@ public class NamesLoader {
 		try {
 			fileReader = new FileReader(f);
 		} catch (FileNotFoundException e) {
-			plugin.debug(Level.WARNING, "Could not find file " + name);
+			plugin.debug(Level.WARNING, "不能找到文件 " + name);
 			return;
 		}
 		BufferedReader list = new BufferedReader(fileReader);
@@ -162,7 +162,7 @@ public class NamesLoader {
 			}
 			list.close();
 		} catch (IOException exception) {
-			plugin.debug(Level.WARNING, "Could not read file " + name);
+			plugin.debug(Level.WARNING, "不能读取文件 " + name);
 		}
 	}
 
@@ -193,15 +193,15 @@ public class NamesLoader {
 						"/" + name);
 			}
 			if (input == null) {
-				plugin.debug(Level.WARNING, "Not an actual file: " + name);
-				plugin.getLogger().warning("Not an actual file: " + name);
+				plugin.debug(Level.WARNING, "不是一个文件: " + name);
+				plugin.getLogger().warning("不是一个文件: " + name);
 				return;
 			}
 			FileOutputStream output;
 			try {
 				output = new FileOutputStream(actual, false);
 			} catch (FileNotFoundException e) {
-				plugin.debug(Level.WARNING, "Could not find file " + name);
+				plugin.debug(Level.WARNING, "不能找到文件 " + name);
 				return;
 			}
 			byte[] buf = new byte[1024];
@@ -213,7 +213,7 @@ public class NamesLoader {
 				output.close();
 				input.close();
 			} catch (IOException exception) {
-				plugin.debug(Level.WARNING, "Could not write file " + name);
+				plugin.debug(Level.WARNING, "不能写入文件 " + name);
 			}
 		}
 	}
