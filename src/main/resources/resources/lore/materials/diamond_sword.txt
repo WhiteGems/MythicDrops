@@ -1,2 +1,2 @@
-&4Made for hitting zombies into lava.
-&7The airspeed velocity of creepers/nis absolute zero.
+&4让僵尸们也到岩浆里游个泳.
+&7爬行者们还敢靠近?
