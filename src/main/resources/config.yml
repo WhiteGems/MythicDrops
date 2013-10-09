@@ -18,5 +18,5 @@ display:
     randomLoreChance: 0.25
 # format determines the format of the lore of the item
     format:
-    - "&FType: %mythicmaterial%"
-    - "&7Punch an anvil to repair"
+    - "&F类型: %mythicmaterial%"
+    - "&7点击铁砧进行修复"
