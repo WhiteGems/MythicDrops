@@ -2,119 +2,119 @@ version: 2.7.0
 # A bunch of different and modifiable messages
 #   used in the "/md" commands.
 command:
-  only-players: "&6[MythicDrops] &COnly players can run this command."
-  no-access: "&6[MythicDrops] &CYou don't have access to this command."
-  spawn-random: "&6[MythicDrops] &AYou were given &F%amount%&A MythicDrops item(s)."
-  spawn-random-failure: "&6[MythicDrops] &CYou were unable to be given &F%amount%&C MythicDrops item(s)."
-  give-random-receiver: "&6[MythicDrops] &AYou were given &F%amount%&A MythicDrops item(s)."
-  give-random-receiver-failure: "&6[MythicDrops] &CYou were unable to be given &F%amount%&C MythicDrops item(s)."
-  give-random-sender: "&6[MythicDrops] &F%receiver%&A was given &F%amount%&A MythicDrops item(s)."
-  give-random-sender-failure: "&6[MythicDrops] &F%receiver%&C was given &F%amount%&C MythicDrops item(s)."
-  spawn-custom: "&6[MythicDrops] &AYou have received &F%amount%&A custom MythicDrops item(s)."
-  spawn-custom-failure: "&6[MythicDrops] &CYou were unable to be given &F%amount%&C custom MythicDrops item(s)."
-  give-custom-receiver: "&6[MythicDrops] &AYou have recieved &F%amount%&A MythicDrops item(s)!"
-  give-custom-receiver-failure: "&6[MythicDrops] &CYou were unable to be given &F%amount%&C custom MythicDrops item(s)."
-  give-custom-sender: "&6[MythicDrops] &F%receiver%&A was given &F%amount%&A custom MythicDrops item(s)."
-  give-custom-sender-failure: "&6[MythicDrops] &F%receiver%&C was unable to be given &F%amount%&C custom MythicDrops item(s)."
-  reload-config: "&6[MythicDrops] &AMythicDrops configs reloaded."
-  reload-plugin: "&6[MythicDrops] &AMythicDrops reloaded."
-  save-config: "&6[MythicDrops] &AMythicDrops configs saved."
-  tier-does-not-exist: "&6[MythicDrops] &CThat tier does not exist."
-  custom-item-does-not-exist: "&6[MythicDrops] &CThat custom item does not exist."
-  player-does-not-exist: "&6[MythicDrops] &CThat player does not exist or is not online."
+  only-players: "&6[神秘] &C只有玩家可以运行这个指令."
+  no-access: "&6[神秘] &C你没有权限使用这个指令."
+  spawn-random: "&6[神秘] &A已生成 &F%amount% &A个神秘物品."
+  spawn-random-failure: "&6[神秘] &C你不能生成 &F%amount% &C个神秘物品."
+  give-random-receiver: "&6[神秘] &A已生成 &F%amount% &A个神秘物品."
+  give-random-receiver-failure: "&6[神秘] &C你不能生成 &F%amount% &C个神秘物品."
+  give-random-sender: "&6[神秘] &F%receiver%&A给予 &F%amount% &A个神秘物品."
+  give-random-sender-failure: "&6[神秘] &F%receiver%&C给予 &F%amount% &C个神秘物品."
+  spawn-custom: "&6[神秘] &A你收到了 &F%amount% &A个自定义神秘物品."
+  spawn-custom-failure: "&6[神秘] &C你不能生成 &F%amount% &C个自定义神秘物品."
+  give-custom-receiver: "&6[神秘] &A你已收到 &F%amount% &A个神秘物品!"
+  give-custom-receiver-failure: "&6[神秘] &C你不能生成 &F%amount% &C个自定义神秘物品."
+  give-custom-sender: "&6[神秘] &F%receiver%&A 给予 &F%amount% &A个自定义神秘物品."
+  give-custom-sender-failure: "&6[神秘] &F%receiver%&C不能生成 &F%amount% &C个自定义神秘物品."
+  reload-config: "&6[神秘] &A神秘的配置已重新载入."
+  reload-plugin: "&6[神秘] &A神秘已重新载入."
+  save-config: "&6[神秘] &A神秘的配置已保存."
+  tier-does-not-exist: "&6[神秘] &C这个层次不存在."
+  custom-item-does-not-exist: "&6[神秘] &C那个自定义物品不存在."
+  player-does-not-exist: "&6[神秘] &C&6[神秘] &C玩家不存在或者不在线."
   command-help: "&7/%command% &F- &7%help%"
-  customcreate-failure: "&6[MythicDrops] &CUnable to create custom item."
-  customcreate-success: "&6[MythicDrops] &ACreated a custom item with id &F%name%&A."
+  customcreate-failure: "&6[神秘] &C不能创建自定义物品."
+  customcreate-success: "&6[神秘] &A成功创建ID为&F%name%&A的自定义物品."
 # Various display names that are used for
 #   different itemNameFormat variables
 displayNames:
-  '256': Iron Shovel
-  '257': Iron Pickaxe
-  '258': Iron Axe
-  '261': Bow
-  '267': Iron Sword
-  '268': Wood Sword
-  '269': Wooden Shovel
-  '270': Wood Pickaxe
-  '271': Wood Axe
-  '272': Stone Sword
-  '273': Stone Shovel
-  '274': Stone Pickaxe
-  '275': Stone Axe
-  '276': Diamond Sword
-  '277': Diamond Shovel
-  '278': Diamond Pickaxe
-  '279': Diamond Axe
-  '283': Gold Sword
-  '284': Gold Shovel
-  '285': Gold Pickaxe
-  '286': Gold Axe
-  '290': Wooden Hoe
-  '291': Stone Hoe
-  '292': Iron Hoe
-  '293': Diamond Hoe
-  '294': Gold Hoe
-  '298': Leather Cap
-  '299': Leather Tunic
-  '300': Leather Pants
-  '301': Leather Boots
-  '302': Chainmail Helmet
-  '303': Chainmail Chestplate
-  '304': Chainmail Leggings
-  '305': Chainmail Boots
-  '306': Iron Helmet
-  '307': Iron Chestplate
-  '308': Iron Leggings
-  '309': Iron Boots
-  '310': Diamond Helmet
-  '311': Diamond Chestplate
-  '312': Diamond Leggings
-  '313': Diamond Boots
-  '314': Gold Helmet
-  '315': Gold Chestplate
-  '316': Gold Leggings
-  '317': Gold Boots
-  '346': Fishing Rod
-  '359': Shears
-  axe: Axe
-  hoe: Hoe
-  pickaxe: Pickaxe
-  shovel: Shovel
-  sword: Sword
-  bow: Bow
-  fishing rod: Fishing Rod
-  shears: Shears
-  helmet: Helmet
-  chestplate: Chestplate
-  leggings: Leggings
-  boots: Boots
-  wood: Wood
-  stone: Stone
-  gold: Gold
-  iron: Iron
-  diamond: Diamond
-  leather: Leather
-  chainmail: Chainmail
-  Ordinary: Ordinary
-  DURABILITY: Durable
-  PROTECTION_ENVIRONMENTAL: Safe
-  LOOT_BONUS_BLOCKS: Fortunate
-  PROTECTION_FIRE: Fireproof
-  DIG_SPEED: Miner's
-  PROTECTION_FALL: Feathery
-  SILK_TOUCH: Careful
-  PROTECTION_EXPLOSIONS: Wary
-  PROTECTION_PROJECTILE: Dodger's
-  OXYGEN: Merman's
-  WATER_WORKER: Atlantean
-  THORNS: Prickly
-  ARROW_INFINITE: Quivered
-  DAMAGE_UNDEAD: Holy
-  ARROW_FIRE: Flaming
-  DAMAGE_ALL: Sharp
-  ARROW_KNOCKBACK: Broadhead
-  KNOCKBACK: Heavy
-  ARROW_DAMAGE: Sharpened
-  DAMAGE_ARTHROPODS: Squisher's
-  LOOT_BONUS_MOBS: Looter's
-  FIRE_ASPECT: Burning
+ '256': 铁铲
+  '257': 铁镐
+  '258': 铁斧
+  '261': 弓
+  '267': 铁剑
+  '268': 木剑
+  '269': 木铲
+  '270': 木镐
+  '271': 木斧
+  '272': 石剑
+  '273': 石铲
+  '274': 石镐
+  '275': 石斧
+  '276': 钻石剑
+  '277': 钻石铲
+  '278': 钻石镐
+  '279': 钻石斧
+  '283': 金剑
+  '284': 金铲
+  '285': 金镐
+  '286': 金斧
+  '290': 木锄
+  '291': 石锄
+  '292': 铁锄
+  '293': 钻石锄
+  '294': 金锄
+  '298': 皮革帽
+  '299': 皮革外套
+  '300': 皮革裤
+  '301': 皮革靴子
+  '302': 锁链头盔
+  '303': 锁链铠甲
+  '304': 锁链绑腿
+  '305': 锁链靴子
+  '306': 铁头盔
+  '307': 铁铠甲
+  '308': 铁绑腿
+  '309': 铁靴子
+  '310': 钻石头盔
+  '311': 钻石铠甲
+  '312': 钻石绑腿
+  '313': 钻石靴子
+  '314': 金头盔
+  '315': 金铠甲
+  '316': 金绑腿
+  '317': 金靴子
+  '346': 钓鱼竿
+  '359': 剪刀
+  axe: 斧
+  hoe: 锄
+  pickaxe: 镐
+  shovel: 铲
+  sword: 剑
+  bow: 弓
+  fishing rod: 钓鱼竿
+  shears: 剪刀
+  helmet: 头盔
+  chestplate: 铠甲
+  leggings: 绑腿
+  boots: 靴子
+  wood: 木头
+  stone: 石
+  gold: 金
+  iron: 铁
+  diamond: 钻石
+  leather: 皮革
+  chainmail: 锁链
+  Ordinary: 普通
+  DURABILITY: 耐用的
+  PROTECTION_ENVIRONMENTAL: 安全的
+  LOOT_BONUS_BLOCKS: 幸运的
+  PROTECTION_FIRE: 防火的
+  DIG_SPEED: 矿工的
+  PROTECTION_FALL: 潜行的
+  SILK_TOUCH: 精准的
+  PROTECTION_EXPLOSIONS: 警惕的
+  PROTECTION_PROJECTILE: 护盾的
+  OXYGEN: 人鱼的
+  WATER_WORKER: 亚特兰蒂斯的
+  THORNS: 荆棘的
+  ARROW_INFINITE: 颤抖的
+  DAMAGE_UNDEAD: 神圣的
+  ARROW_FIRE: 炙热的
+  DAMAGE_ALL: 尖锐的
+  ARROW_KNOCKBACK: 红莲的
+  KNOCKBACK: 巨力的
+  ARROW_DAMAGE: 锋利的
+  DAMAGE_ARTHROPODS: 碾压的
+  LOOT_BONUS_MOBS: 抢夺者的
+  FIRE_ASPECT: 燃烧的
